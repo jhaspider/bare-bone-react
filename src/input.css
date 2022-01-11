@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Run CSS : $npx tailwindcss -i ./src/input.css -o ./public/css/output.css --watch */
+
+h1 {
+  font-size: 24px;
+  color: #011520;
+}
+
+h2 {
+  font-size: 14px;
+  color: #00000099;
+}
+
+h3 {
+  font-size: 16px;
+  color: #000000;
+}
+
+p {
+  font-size: 14px;
+}
+
+.link {
+  padding: 16px 20px;
+  background-color: #ebeef1;
+  border-radius: 14px;
+  margin-bottom: 16px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 56px;
+  cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 1s;
+}
+
+.link .icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  overflow: hidden;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  background-color: currentcolor;
+  -webkit-mask-size: 100%;
+  left: 8px;
+  border-radius: 12px;
+  width: 48px;
+  height: 48px;
+}
